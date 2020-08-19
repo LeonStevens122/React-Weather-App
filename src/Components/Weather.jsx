@@ -50,7 +50,7 @@ class Weather extends Component {
 
     // add user input & API Key to API URL & Save as a variable
     cityAPI =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       input +
       "&appid=" +
       API_KEY +

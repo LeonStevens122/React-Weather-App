@@ -49,7 +49,7 @@ class App extends Component {
     navigator.geolocation.getCurrentPosition((position) => {
       // use fetch to retrieve the weather data from the API
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&APPID=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&APPID=${API_KEY}&units=metric`
       )
         .then((fetchedResults) => {
           return fetchedResults.json();
